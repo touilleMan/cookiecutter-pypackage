@@ -1,7 +1,7 @@
 {
-	"full_name": "Audrey Roy Greenfeld",
-	"email": "aroy@alum.mit.edu",
-	"github_username": "audreyr",
+	"full_name": "Emmanuel Leblond",
+	"email": "emmanuel.leblond@gmail.com",
+	"github_username": "touilleMan",
 	"project_name": "Python Boilerplate",
 	"project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
 	"project_short_description": "Python Boilerplate contains all the boilerplate you need to create a Python package.",
@@ -9,5 +9,6 @@
 	"pypi_username": "{{ cookiecutter.github_username }}",
 	"year": "2016",
 	"version": "0.1.0",
-	"use_pypi_deployment_with_travis": "y"
+	"use_pypi_deployment_with_travis": "y",
+	"use_coveralls": "y"
 }

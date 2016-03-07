@@ -8,12 +8,12 @@ test_{{ cookiecutter.project_slug }}
 Tests for `{{ cookiecutter.project_slug }}` module.
 """
 
-import unittest
+import pytest  # noqa
 
-from {{ cookiecutter.project_slug }} import {{ cookiecutter.project_slug }}
+from {{ cookiecutter.project_slug }} import {{ cookiecutter.project_slug }}  # noqa
 
 
-class Test{{ cookiecutter.project_slug|capitalize }}(unittest.TestCase):
+class Test{{ cookiecutter.project_slug|capitalize }}:
 
     def setUp(self):
         pass
@@ -23,8 +23,3 @@ class Test{{ cookiecutter.project_slug|capitalize }}(unittest.TestCase):
 
     def test_000_something(self):
         pass
-
-
-if __name__ == '__main__':
-    import sys
-    sys.exit(unittest.main())

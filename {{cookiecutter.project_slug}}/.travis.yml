@@ -13,10 +13,19 @@ env:
   - TOXENV=pypy
 
 # command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
-install: pip install -U tox
+install:
+  - pip install -U tox
+{% if cookiecutter.use_coveralls == 'y' -%}
+  - pip install -U coveralls
+{%- endif %}
 
 # command to run tests, e.g. python setup.py test
 script: tox
+
+{% if cookiecutter.use_coveralls == 'y' -%}
+after_success:
+  - coveralls
+{%- endif %}
 
 {% if cookiecutter.use_pypi_deployment_with_travis == 'y' -%}
 # After you create the Github repo and add it to Travis, run the
