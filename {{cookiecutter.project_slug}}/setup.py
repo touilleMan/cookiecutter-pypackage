@@ -37,7 +37,7 @@ setup(
                  '{{ cookiecutter.project_slug }}'},
     include_package_data=True,
     install_requires=requirements,
-    license="ISCL",
+    license="MIT",
     zip_safe=False,
     keywords='{{ cookiecutter.project_slug }}',
     classifiers=[
