@@ -11,7 +11,12 @@
 .. image:: https://readthedocs.org/projects/{{ cookiecutter.project_slug }}/badge/?version=latest
         :target: https://readthedocs.org/projects/{{ cookiecutter.project_slug }}/?badge=latest
         :alt: Documentation Status
+{% if cookiecutter.use_coveralls == 'y' -%}
 
+.. image:: https://coveralls.io/repos/github/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/badge.svg?branch=master
+    :target: https://coveralls.io/github/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}
+    :alt: Code coverage
+{%- endif %}
 
 {{ cookiecutter.project_short_description}}
 
