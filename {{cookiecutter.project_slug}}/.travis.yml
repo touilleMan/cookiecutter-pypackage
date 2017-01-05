@@ -8,7 +8,7 @@ python:
 
 # command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
 install:
-  - pip install -U tox
+  - pip install -Ur requirements_dev.txt
 {% if cookiecutter.use_coveralls == 'y' -%}
   - pip install -U coveralls
 {%- endif %}
